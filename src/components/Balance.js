@@ -7,6 +7,7 @@ const Balance = () => {
   const { transactions } = useContext(GlobalContext);
 
   const amounts = transactions.map(transaction => transaction.amount);
+  console.log(amounts);
   const total = amounts.reduce((a, b) => (a += b), 0).toFixed(2);
 
 
